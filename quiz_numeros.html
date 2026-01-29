@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Quiz – Números Naturales</title>
+<link rel="stylesheet" href="estilos.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Quiz de Números Naturales</h1>
+    <p>Responde las 10 preguntas</p>
+</header>
+
+<section class="quiz-section">
+
+<form id="quiz">
+
+<div class="quiz-contenedor">
+
+<div class="columna">
+    <p>1. ¿Cuál es un número natural?</p>
+    <label><input type="radio" name="p1" data-correct> 8</label>
+    <label><input type="radio" name="p1"> -3</label>
+
+    <p>2. ¿Para qué sirven los números naturales?</p>
+    <label><input type="radio" name="p2" data-correct> Para contar</label>
+    <label><input type="radio" name="p2"> Para medir temperatura</label>
+
+    <p>3. ¿Cuál es el mayor?</p>
+    <label><input type="radio" name="p3" data-correct> 15</label>
+    <label><input type="radio" name="p3"> 9</label>
+
+    <p>4. ¿Cuál es el menor?</p>
+    <label><input type="radio" name="p4" data-correct> 3</label>
+    <label><input type="radio" name="p4"> 12</label>
+
+    <p>5. ¿Cuántos objetos hay si contamos 1,2,3?</p>
+    <label><input type="radio" name="p5" data-correct> 3</label>
+    <label><input type="radio" name="p5"> 2</label>
+</div>
+
+<div class="columna">
+    <p>6. ¿Qué número sigue después del 9?</p>
+    <label><input type="radio" name="p6" data-correct> 10</label>
+    <label><input type="radio" name="p6"> 11</label>
+
+    <p>7. ¿Cuál NO es natural?</p>
+    <label><input type="radio" name="p7" data-correct> -5</label>
+    <label><input type="radio" name="p7"> 7</label>
+
+    <p>8. ¿Cuál representa una cantidad?</p>
+    <label><input type="radio" name="p8" data-correct> 6</label>
+    <label><input type="radio" name="p8"> 1/2</label>
+
+    <p>9. ¿Con qué número empiezan?</p>
+    <label><input type="radio" name="p9" data-correct> 1</label>
+    <label><input type="radio" name="p9"> -1</label>
+
+    <p>10. ¿Para contar niños usamos?</p>
+    <label><input type="radio" name="p10" data-correct> Números naturales</label>
+    <label><input type="radio" name="p10"> Fracciones</label>
+</div>
+
+</div>
+
+<div class="quiz-botones">
+    <button type="button" onclick="calcularNota()">Calcular nota</button>
+    <a href="problemas.html" class="volver">⬅ Volver atrás</a>
+</div>
+
+</form>
+
+<h2 id="resultado" class="resultado"></h2>
+
+</section>
+
+<footer>
+<p>Matemáticas – Quinto Grado</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Matemáticas – Quinto Grado</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Matemáticas – Quinto Grado</h1>
+    <p>Elige un tema para comenzar</p>
+</header>
+
+<section class="contenedor">
+
+    <a href="numeros.html" class="card"
+       onclick="sonidoYRedirigir(event, 'numeros.html')">
+        <span class="icono">🔢</span>
+        <h2>Números Naturales</h2>
+        <p>Contar y reconocer cantidades.</p>
+    </a>
+
+    <a href="operaciones.html" class="card"
+       onclick="sonidoYRedirigir(event, 'operaciones.html')">
+        <span class="icono">➕</span>
+        <h2>Operaciones</h2>
+        <p>Suma, resta, multiplicación y división.</p>
+    </a>
+
+    <a href="fracciones.html" class="card"
+       onclick="sonidoYRedirigir(event, 'fracciones.html')">
+        <span class="icono">🍕</span>
+        <h2>Fracciones</h2>
+        <p>Partes de un todo.</p>
+    </a>
+
+    <a href="problemas.html" class="card"
+       onclick="sonidoYRedirigir(event, 'problemas.html')">
+        <span class="icono">🧠</span>
+        <h2>Resolución de Problemas</h2>
+        <p>Aplica lo aprendido.</p>
+    </a>
+
+</section>
+
+<footer>
+    <p>Unidad Educativa “Ciudad de Machala” – 2025</p>
+</footer>
+
+<audio id="clic" preload="auto">
+    <source src="click.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* ================= RESET / GENERAL ================= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2ff;
+    margin: 0;
+}
+
+/* ================= ENCABEZADO ================= */
+header {
+    background-color: #4a6cf7;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+/* ================= CONTENEDORES ================= */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px 0 40px;
+}
+
+.contenedor-problemas {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    gap: 30px;
+    justify-content: center;
+    padding: 50px 50px 0 50px;
+}
+
+/* ================= TARJETAS ================= */
+.card,
+.card-problema {
+    background-color: #4a6cf7;
+    color: white;
+    text-decoration: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card {
+    height: 260px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-problema {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ================= EFECTOS ================= */
+.card:hover,
+.card-problema:hover {
+    background-color: #354bdc;
+    transform: translateY(-6px);
+}
+
+/* ================= ICONOS ================= */
+.icono {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+/* ================= TEXTO TARJETAS ================= */
+.card p {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+/* ================= QUIZ ================= */
+.quiz-section {
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.quiz-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.columna {
+    background-color: #f5f7ff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.columna p {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.columna label {
+    display: block;
+    margin-left: 10px;
+}
+
+/* ================= BOTONES QUIZ ================= */
+.quiz-botones {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.quiz-botones button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.volver {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ================= RESULTADO ================= */
+.resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    background-color: #eef2ff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #4a6cf7;
+    color: white;
+    text-align: center;
+    padding: 45px 0 25px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 220px);
+    }
+}
+
+@media (max-width: 500px) {
+    .contenedor {
+        grid-template-columns: 220px;
+    }
+}
+
+@media (max-width: 800px) {
+    .quiz-contenedor {
+        grid-template-columns: 1fr;
+    }
+}

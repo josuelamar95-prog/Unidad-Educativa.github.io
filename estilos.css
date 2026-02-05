@@ -179,3 +179,50 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Ajustes para Celulares */
+@media (max-width: 768px) {
+    
+    /* 1. El menú principal pasa de 4 columnas a 1 sola */
+    .contenedor, .contenedor-problemas {
+        grid-template-columns: 1fr; /* Una columna que ocupa todo el ancho */
+        padding: 20px;
+        gap: 20px;
+    }
+
+    /* 2. Las tarjetas se vuelven más largas y fáciles de tocar */
+    .card, .card-problema {
+        width: 90%; /* Casi todo el ancho de la pantalla */
+        margin: auto;
+        padding: 30px 15px;
+    }
+
+    /* 3. En los exámenes (Quizzes), las preguntas se ponen en fila */
+    .quiz-contenedor {
+        grid-template-columns: 1fr; /* Ya no hay dos columnas, solo una */
+        gap: 15px;
+    }
+
+    /* 4. Títulos más pequeños para que no ocupen toda la pantalla */
+    header h1 {
+        font-size: 22px;
+    }
+
+    /* 5. Los botones de radio y etiquetas se separan más */
+    .columna label {
+        padding: 10px 0;
+        font-size: 18px; /* Texto más grande para leer mejor */
+    }
+
+    /* 6. Botones de acción al 100% de ancho */
+    .quiz-botones {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .quiz-botones button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
